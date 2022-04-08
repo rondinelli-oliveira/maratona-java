@@ -15,10 +15,11 @@ public class Aula10TiposPrimitivos {
         boolean verdadeiro = true;
         boolean falso = false;
         char caractere = 82;
-
+        String nome = "Um texto grande!";
 
         System.out.println(idade);
         System.out.println(verdadeiro);
         System.out.println(caractere);
+        System.out.println(nome);
     }
 }
