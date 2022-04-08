@@ -6,15 +6,15 @@ public class Aula10TiposPrimitivos {
         //int, double, float, char, byte, short, long, boolean
         //por convenção as variáveis devem ser iniciadas com letra minúscula e se for composta
         //a segunda palavras começa com letra maiúscula
-        int idade = 10;
-        long numeroGrande = 100000;
-        double salarioDoule = 2000;
-        float salarioFloat = 2500;
+        int idade = (int)1000000000L;
+        long numeroGrande = 100000L;
+        double salarioDoule = 2000.0;
+        float salarioFloat = (float) 2500.0F;
         byte idadeByte = 10;
         short idadeShort = 10;
         boolean verdadeiro = true;
         boolean falso = false;
-        char caractere = 'R';
+        char caractere = 82;
 
 
         System.out.println(idade);
