@@ -6,7 +6,7 @@ package academy.devdojo.maratonajava.introducao;
 //De R$ 2.826,65 a R$ 3.751,06	15%	R$ 354,80
 //De R$ 3.751,06 a R$ 4.664,68	22,5%	R$ 636,13
 //Acima de R$ 4.664,68	27,5%	R$ 869,36
-public class Aula23EstruturasCondicionaisExercicios {
+public class Aula23EstruturasCondicionaisExercicio {
     public static void main(String[] args) {
         double salario = 7200.00;
         double faixaImposto1 = 7.5 / 100;
