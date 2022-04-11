@@ -9,5 +9,7 @@ public class CalculadoraTest03 {
         double result = calculadora.divideDoisNumeros2(15, 3);
         System.out.println(result);
         System.out.println("Finalizando divisão.");
+        System.out.println(calculadora.divideDoisNumeros3(4, 0));
+        calculadora.imprimeDivideDoisNumeros3(3, 0);
     }
 }
