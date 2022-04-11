@@ -9,4 +9,12 @@ public class Calculadora {
     public void subtraiDoisNumeros() {
         System.out.println(21 - 2);
     }
+
+    public void mutiplicaDoisNumeros(int num1, int num2) {
+        System.out.println(num1 * num2);
+    }
+
+    public void divideDoisNumeros(int num1, int num2) {
+        System.out.println(num1 / num2);
+    }
 }
