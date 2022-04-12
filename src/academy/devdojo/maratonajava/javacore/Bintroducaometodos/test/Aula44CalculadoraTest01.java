@@ -1,10 +1,10 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.test;
 
-import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.Calculadora;
+import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.Aula44Calculadora;
 
-public class CalculadoraTest01 {
+public class Aula44CalculadoraTest01 {
     public static void main(String[] args) {
-        Calculadora calculadora = new Calculadora();
+        Aula44Calculadora calculadora = new Aula44Calculadora();
         System.out.println("Executando a soma");
         calculadora.somaNumeros();
         System.out.println("Finalizando soma.");

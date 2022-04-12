@@ -1,11 +1,11 @@
 package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.test;
 
-import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio.Car;
+import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio.Aula42Car;
 
-public class CarTest02 {
+public class Aula43CarTest02 {
     public static void main(String[] args) {
-        Car car1 = new Car();
-        Car car2 = new Car();
+        Aula42Car car1 = new Aula42Car();
+        Aula42Car car2 = new Aula42Car();
         car1.name = "Gol";
         car1.model = "G5";
         car1.year = 2011;

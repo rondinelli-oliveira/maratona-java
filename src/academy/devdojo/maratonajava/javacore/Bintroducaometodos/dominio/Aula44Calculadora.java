@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 
-public class Calculadora {
+public class Aula44Calculadora {
 
     public void somaNumeros() {
         System.out.println(10 + 10);
@@ -40,5 +40,13 @@ public class Calculadora {
         } else {
             System.out.println(num1 / num2);
         }
+    }
+
+    public void alteraDoisNumeros(int numero1, int numero2) {
+        numero1 = 99;
+        numero2 = 33;
+        System.out.println("Dentro do alteraDoisNumeros");
+        System.out.println("Numero1 " + numero1);
+        System.out.println("Numero2 " + numero2);
     }
 }

@@ -1,10 +1,10 @@
 package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.test;
 
-import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio.Professor;
+import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio.Aula41Professor;
 
 public class ProfessorTest01 {
     public static void main(String[] args) {
-        Professor professor = new Professor();
+        Aula41Professor professor = new Aula41Professor();
         professor.nome = "Doco";
         professor.idade = 99999999;
         professor.sexo = 'M';

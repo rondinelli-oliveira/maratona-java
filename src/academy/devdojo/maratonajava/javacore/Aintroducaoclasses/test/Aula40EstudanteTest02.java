@@ -1,11 +1,11 @@
 package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.test;
 
-import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio.Estudante;
+import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio.Aula39Estudante;
 
-public class EstudanteTest02 {
+public class Aula40EstudanteTest02 {
     public static void main(String[] args) {
-        Estudante estudante = new Estudante();
-        Estudante estudante2 = new Estudante();
+        Aula39Estudante estudante = new Aula39Estudante();
+        Aula39Estudante estudante2 = new Aula39Estudante();
 
         estudante.nome = "Seya";
         estudante.idade= 18;
