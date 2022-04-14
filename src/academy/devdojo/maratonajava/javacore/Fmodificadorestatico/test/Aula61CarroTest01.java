@@ -7,7 +7,7 @@ public class Aula61CarroTest01 {
         Aula61Carro carro1 = new Aula61Carro("BMW", 280);
         Aula61Carro carro2 = new Aula61Carro("Mercedes", 275);
         Aula61Carro carro3 = new Aula61Carro("Audi", 290);
-        carro1.setVelocidadeLimite(180);
+        Aula61Carro.setVelocidadeLimite(180);
 
         carro1.imprimeDados();
         carro2.imprimeDados();
