@@ -24,5 +24,6 @@ public class Aula71HerancaTest01 {
         funcionario.setSalario(120000);
         System.out.println("-------------------------");
         funcionario.imprimeDados();
+        funcionario.relatorioPagamento();
     }
 }

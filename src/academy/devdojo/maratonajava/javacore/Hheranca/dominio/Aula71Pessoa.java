@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
 public class Aula71Pessoa {
-    private String nome;
-    private String cpf;
-    private Aula71Endereco endereco;
+    protected String nome;
+    protected String cpf;
+    protected Aula71Endereco endereco;
 
     public void imprimeDados() {
         System.out.println(this.nome);
