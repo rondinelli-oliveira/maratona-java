@@ -22,6 +22,7 @@ public class Aula71HerancaTest01 {
         funcionario.setCpf("222.333.444-55");
         funcionario.setEndereco(endereco);
         funcionario.setSalario(120000);
+        System.out.println("-------------------------");
         funcionario.imprimeDados();
     }
 }
