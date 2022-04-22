@@ -5,7 +5,20 @@ public class Aula71Pessoa {
     protected String cpf;
     protected Aula71Endereco endereco;
 
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 2 ");
+    }
+
     public Aula71Pessoa(String nome) {
+        System.out.println("Dentro do construtor de pessoa");
         this.nome = nome;
     }
 
