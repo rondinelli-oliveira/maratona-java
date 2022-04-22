@@ -1,9 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Jmodificadorfinal.dominio;
 
-public class Aula77Carro {
+public class Aula78Comprador {
     private String nome;
-    public static final double VELOCIDADE_LIMITE = 250;
-    public final Aula78Comprador COMPRADOR = new Aula78Comprador();
 
     public String getNome() {
         return nome;
@@ -11,5 +9,12 @@ public class Aula77Carro {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return "Comprador{" +
+                "nome='" + nome + '\'' +
+                '}';
     }
 }
