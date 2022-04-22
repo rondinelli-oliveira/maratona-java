@@ -5,6 +5,10 @@ public class Aula77Carro {
     public static final double VELOCIDADE_LIMITE = 250;
     public final Aula78Comprador COMPRADOR = new Aula78Comprador();
 
+    public final void imprimeDados() {
+        System.out.println(this.nome);
+    }
+
     public String getNome() {
         return nome;
     }
