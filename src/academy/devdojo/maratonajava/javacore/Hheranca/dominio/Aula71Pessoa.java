@@ -5,6 +5,10 @@ public class Aula71Pessoa {
     protected String cpf;
     protected Aula71Endereco endereco;
 
+    public Aula71Pessoa(String nome) {
+        this.nome = nome;
+    }
+
     public void imprimeDados() {
         System.out.println(this.nome);
         System.out.println(this.cpf);
