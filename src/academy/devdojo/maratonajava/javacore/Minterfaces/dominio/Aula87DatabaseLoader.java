@@ -15,4 +15,8 @@ public class Aula87DatabaseLoader implements Aula87DataLoader, Aula88DataRemover
     public void checkPermission() {
         System.out.println("Checando permissões no banco de dados....");
     }
+
+    public static void retrieveMaxDataSize() {
+        System.out.println("Dentro do retrieveMaxDataSize na classe DatabaseLoader...");
+    }
 }
