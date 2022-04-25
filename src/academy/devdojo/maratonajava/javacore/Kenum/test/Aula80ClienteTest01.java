@@ -14,5 +14,13 @@ public class Aula80ClienteTest01 {
         System.out.println(cliente2);
         System.out.println(Aula82TipoPagamento.DEBITO.calculaDesconto(100));
         System.out.println(Aula82TipoPagamento.CREDITO.calculaDesconto(100));
+        Aula80TipoCliente tipoCliente = Aula80TipoCliente.valueOf("PESSOA_FISICA");
+        System.out.println(tipoCliente.getNomeRelatorio());
+        Aula80TipoCliente tipoCliente1 = Aula80TipoCliente.valueOf("PESSOA_JURIDICA");
+        System.out.println(tipoCliente1.getNomeRelatorio());
+        Aula80TipoCliente tipoCliente2 = Aula80TipoCliente.tipoClientePorNomeRelatorio("Pessoa Física");
+        System.out.println(tipoCliente2);
+        Aula80TipoCliente tipoCliente3 = Aula80TipoCliente.tipoClientePorNomeRelatorio("Pessoa Jurídica");
+        System.out.println(tipoCliente3);
     }
 }

@@ -12,6 +12,16 @@ public enum Aula80TipoCliente {
         this.nomeRelatorio = nomeRelatorio;
     }
 
+    public static Aula80TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
+        for (Aula80TipoCliente tipoCliente : values()) {
+            if (tipoCliente.getNomeRelatorio().equals(nomeRelatorio)) {
+                return tipoCliente;
+            }
+
+        }
+        return null;
+    }
+
     public int getValor() {
         return valor;
     }
