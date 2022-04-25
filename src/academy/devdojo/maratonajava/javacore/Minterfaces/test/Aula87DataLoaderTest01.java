@@ -9,5 +9,11 @@ public class Aula87DataLoaderTest01 {
         Aula87FileLoader fileLoader = new Aula87FileLoader();
         databaseLoader.load();
         fileLoader.load();
+
+        databaseLoader.remove();
+        fileLoader.remove();
+
+        databaseLoader.checkPermission();
+        fileLoader.checkPermission();
     }
 }
