@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Lclassesabstratas.dominio;
 
-public abstract class Aula84Funcionario {
+public abstract class Aula84Funcionario extends Aula86Pessoa {
     protected String nome;
     protected double salario;
 
@@ -11,6 +11,11 @@ public abstract class Aula84Funcionario {
     }
 
     public abstract void calculaBonus();
+
+    @Override
+    public void imprimeDados() {
+        System.out.println("Imprimindo..............");
+    }
 
     @Override
     public String toString() {

@@ -9,5 +9,7 @@ public class Aula84FuncionarioTest01 {
         Aula84Desenvolvedor desenvolvedor = new Aula84Desenvolvedor("Rondinelli", 12000);
         System.out.println(gerente);
         System.out.println(desenvolvedor);
+        gerente.imprimeDados();
+        desenvolvedor.imprimeDados();
     }
 }
