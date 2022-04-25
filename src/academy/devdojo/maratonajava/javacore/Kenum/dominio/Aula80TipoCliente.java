@@ -4,9 +4,13 @@ public enum Aula80TipoCliente {
     PESSOA_FISICA(1),
     PESSOA_JURIDICA(2);
 
-    public final int VALOR;
+    private int valor;
 
     Aula80TipoCliente(int valor) {
-        this.VALOR = valor;
+        this.valor = valor;
+    }
+
+    public int getValor() {
+        return valor;
     }
 }
