@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.Oexcecao.test;
+package academy.devdojo.maratonajava.javacore.Oexcecao.erro.test;
 
-public class StackOverFlowTest01 {
+public class Aula95StackOverFlowTest01 {
     public static void main(String[] args) {
 
     }
