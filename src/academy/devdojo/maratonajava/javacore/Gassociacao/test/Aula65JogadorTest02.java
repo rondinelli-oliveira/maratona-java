@@ -9,7 +9,7 @@ public class Aula65JogadorTest02 {
         Aula65Time time = new Aula65Time("Flamengo");
 
         jogador1.setTime(time);
-        
+
         jogador1.imprimeDados();
     }
 }

@@ -1,7 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Kenum.test;
 
 import academy.devdojo.maratonajava.javacore.Kenum.dominio.Aula80Cliente;
-
 import academy.devdojo.maratonajava.javacore.Kenum.dominio.Aula80TipoCliente;
 import academy.devdojo.maratonajava.javacore.Kenum.dominio.Aula82TipoPagamento;
 

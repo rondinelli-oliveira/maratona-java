@@ -20,7 +20,7 @@ public class Aula42CarTest01 {
         System.out.println(car1.year);
 
         System.out.println("---------------");
-        
+
         System.out.println("Carro 2");
         System.out.println(car2.name);
         System.out.println(car2.model);

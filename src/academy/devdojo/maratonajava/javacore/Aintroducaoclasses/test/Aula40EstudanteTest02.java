@@ -8,12 +8,12 @@ public class Aula40EstudanteTest02 {
         Aula39Estudante estudante2 = new Aula39Estudante();
 
         estudante.nome = "Seya";
-        estudante.idade= 18;
-        estudante.sexo='M';
+        estudante.idade = 18;
+        estudante.sexo = 'M';
 
         estudante2.nome = "Seya";
-        estudante2.idade= 18;
-        estudante2.sexo='M';
+        estudante2.idade = 18;
+        estudante2.sexo = 'M';
 
 
         System.out.println(estudante.nome);

@@ -30,7 +30,7 @@ public class Aula70Professor {
             System.out.println(seminario.getLocal().getEndereco());
             if (seminario.getAlunos() == null || seminario.getAlunos().length == 0) continue;
             System.out.println("** Alunos **");
-            for (Aula70Aluno aluno: seminario.getAlunos()) {
+            for (Aula70Aluno aluno : seminario.getAlunos()) {
                 System.out.println("Aluno :" + aluno.getNome() + " idade: " + aluno.getIdade());
             }
 

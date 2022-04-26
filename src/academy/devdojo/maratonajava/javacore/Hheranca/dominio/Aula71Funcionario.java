@@ -25,7 +25,7 @@ public class Aula71Funcionario extends Aula71Pessoa {
         System.out.println(this.salario);
     }
 
-    public void relatorioPagamento(){
+    public void relatorioPagamento() {
         System.out.println("Eu " + this.nome + " recebi o salário de: " + this.salario);
     }
 

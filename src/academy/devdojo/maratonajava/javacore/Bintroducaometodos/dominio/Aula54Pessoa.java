@@ -17,14 +17,14 @@ public class Aula54Pessoa {
     }
 
     public void setIdade(int idade) {
-        if (idade < 0){
+        if (idade < 0) {
             System.out.println("Idade inválida!");
             return;
         }
         this.idade = idade;
     }
 
-    public void imprimeDados(){
+    public void imprimeDados() {
         System.out.println(this.nome);
         System.out.println(this.idade);
     }

@@ -23,7 +23,7 @@ public class Aula100RuntimeExceptionTest03 {
             System.out.println("Abrindo arquivo");
             System.out.println("Escrevendo dados no arquivo");
             throw new RuntimeException();
-        }finally {
+        } finally {
             System.out.println("Fechando recurso liberado pelo SO");
         }
     }

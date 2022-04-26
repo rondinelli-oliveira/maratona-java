@@ -39,7 +39,7 @@ public class Aula25EstruturasCondicionais {
             case 'M':
                 System.out.println("Homem");
                 break;
-            case 'F' :
+            case 'F':
                 System.out.println("Mulher");
                 break;
             default:

@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio;
 
-public abstract class Aula90Produto implements Aula90Taxavel{
+public abstract class Aula90Produto implements Aula90Taxavel {
     protected String nome;
     protected double valor;
 

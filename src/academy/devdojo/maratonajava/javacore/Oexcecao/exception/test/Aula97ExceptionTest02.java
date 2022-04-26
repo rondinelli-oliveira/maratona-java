@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Aula97ExceptionTest02 {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         criarNovoArquivo();
     }
 
