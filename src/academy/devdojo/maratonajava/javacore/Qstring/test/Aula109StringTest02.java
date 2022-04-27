@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Qstrig.test;
+package academy.devdojo.maratonajava.javacore.Qstring.test;
 
 public class Aula109StringTest02 {
     public static void main(String[] args) {
