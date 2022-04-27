@@ -17,6 +17,5 @@ public class Aula120LocalTimeTest01 {
         System.out.println(LocalTime.MIN);
         System.out.println(LocalTime.MAX);
         System.out.println(LocalTime.MIDNIGHT);
-
     }
 }
