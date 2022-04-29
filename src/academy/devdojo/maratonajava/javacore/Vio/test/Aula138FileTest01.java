@@ -12,7 +12,7 @@ public class Aula138FileTest01 {
         try {
             boolean isCreated = file.createNewFile();
             System.out.println("Arquivo criado com sucesso: " + isCreated);
-            System.out.println("File created successfully: " + isCreated);
+            System.out.println("File created successfull: " + isCreated);
             System.out.println("Caminho: " + file.getPath());
             System.out.println("Path: " + file.getPath());
             System.out.println("Caminho absoluto(Path absolute): " + file.getAbsolutePath());
@@ -30,7 +30,7 @@ public class Aula138FileTest01 {
             if (exists) {
                 file.delete();
                 System.out.println("Arquivo excluído com sucesso.");
-                System.out.println("File successfully deleted.");
+                System.out.println("File successfull deleted.");
             }
         } catch (IOException e) {
             e.printStackTrace();
