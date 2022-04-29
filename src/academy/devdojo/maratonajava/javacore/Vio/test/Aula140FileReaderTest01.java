@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Aula140FileReaderTest01 {
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\ROR1021\\Documents\\ws-estudos\\maratona-java\\arquivo\\file.txt");
+        File file = new File("file.txt");
         try (FileReader fileReader = new FileReader(file)) {
 //            char[] in = new char[30];
 //            fileReader.read(in);
