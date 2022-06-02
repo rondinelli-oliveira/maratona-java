@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Xserializacao.dominio;
 import java.io.*;
 
 public class Aula159Aluno implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = -4429467222130701126L;
 
     private Long id;
@@ -51,7 +51,6 @@ public class Aula159Aluno implements Serializable {
         this.turma = turma;
     }
 
-    @Serial
     private void writeObject(ObjectOutputStream outputStream) {
         try {
             outputStream.defaultWriteObject();
@@ -61,7 +60,6 @@ public class Aula159Aluno implements Serializable {
         }
     }
 
-    @Serial
     private void readObject(ObjectInputStream inputStream) {
         try {
             inputStream.defaultReadObject();
