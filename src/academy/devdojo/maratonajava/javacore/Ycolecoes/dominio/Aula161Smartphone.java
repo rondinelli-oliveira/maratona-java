@@ -47,4 +47,12 @@ public class Aula161Smartphone {
     public int hashCode() {
         return serialNumber == null ? 0 : this.serialNumber.hashCode();
     }
+
+    @Override
+    public String toString() {
+        return "Aula161Smartphone{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
 }
