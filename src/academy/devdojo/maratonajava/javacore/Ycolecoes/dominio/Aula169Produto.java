@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.dominio;
 
 import java.util.Objects;
 
-public class Aula169Produto {
+public class Aula169Produto implements Comparable<Aula169Produto> {
     private Long id;
     private String nome;
     private double preco;
@@ -60,5 +60,22 @@ public class Aula169Produto {
     public int hashCode() {
         return Objects.hash(id, nome, preco);
     }
-}
 
+    @Override
+    public int compareTo(Aula169Produto obj) {
+//         negativo se o this < obj
+//         se this == obj, return 0
+//         positivo se this > obj
+//        if(this.id < obj.getId()){
+//            return -1;
+//        }else if(this.id.equals(obj.getId())){
+//            return 0;
+//        }else {
+//            return 1;
+//        }
+//        return this.nome.compareTo(obj.getNome());
+//        return Double.compare(preco, obj.getPreco());
+//        return Double.valueOf(preco).compareTo(obj.getPreco());
+        return this.id.compareTo(obj.getId());
+    }
+}
