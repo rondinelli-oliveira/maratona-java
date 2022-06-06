@@ -73,9 +73,9 @@ public class Aula169Produto implements Comparable<Aula169Produto> {
 //        }else {
 //            return 1;
 //        }
-//        return this.nome.compareTo(obj.getNome());
+        return this.nome.compareTo(obj.getNome());
 //        return Double.compare(preco, obj.getPreco());
 //        return Double.valueOf(preco).compareTo(obj.getPreco());
-        return this.id.compareTo(obj.getId());
+//        return this.id.compareTo(obj.getId());
     }
 }

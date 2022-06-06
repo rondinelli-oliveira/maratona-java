@@ -4,7 +4,16 @@ import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Aula169Produto;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+class Aula171ProdutoByIdComparator implements Comparator<Aula169Produto> {
+
+    @Override
+    public int compare(Aula169Produto produto1, Aula169Produto produto2) {
+        return produto1.getId().compareTo(produto2.getId());
+    }
+}
 
 public class Aula170ProdutoTest01 {
     public static void main(String[] args) {
@@ -24,5 +33,16 @@ public class Aula170ProdutoTest01 {
             System.out.println(produto);
         }
 
+        Collections.sort(produtos, new Aula171ProdutoByIdComparator());
+        System.out.println("-------------------------------------------------");
+        for (Aula169Produto produto : produtos) {
+            System.out.println(produto);
+        }
+
+        produtos.sort(new Aula171ProdutoByIdComparator());
+        System.out.println("-------------------------------------------------");
+        for (Aula169Produto produto : produtos) {
+            System.out.println(produto);
+        }
     }
 }
