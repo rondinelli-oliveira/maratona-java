@@ -6,6 +6,7 @@ public class Aula169Produto implements Comparable<Aula169Produto> {
     private Long id;
     private String nome;
     private double preco;
+    private int quantidade;
 
     public Aula169Produto(Long id, String nome, double preco) {
         Objects.requireNonNull(id, "ID nao pode ser nulo!");
@@ -13,6 +14,11 @@ public class Aula169Produto implements Comparable<Aula169Produto> {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+    }
+
+    public Aula169Produto(Long id, String nome, double preco, int quantidade) {
+        this(id, nome, preco);
+        this.quantidade = quantidade;
     }
 
     public Long getId() {
@@ -39,12 +45,21 @@ public class Aula169Produto implements Comparable<Aula169Produto> {
         this.preco = preco;
     }
 
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
     @Override
     public String toString() {
         return "Aula169Produto{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", preco=" + preco +
+                ", quantidade=" + quantidade +
                 '}';
     }
 
