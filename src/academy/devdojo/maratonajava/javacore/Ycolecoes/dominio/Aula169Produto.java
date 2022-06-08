@@ -68,12 +68,12 @@ public class Aula169Produto implements Comparable<Aula169Produto> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Aula169Produto produto = (Aula169Produto) o;
-        return Double.compare(produto.preco, preco) == 0 && id.equals(produto.id) && nome.equals(produto.nome);
+        return Objects.equals(id, produto.id) && Objects.equals(nome, produto.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nome, preco);
+        return Objects.hash(id, nome);
     }
 
     @Override

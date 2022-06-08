@@ -4,11 +4,12 @@ import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Aula169Produto;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Aula174IteratorTest01 {
     public static void main(String[] args) {
-        List<Aula169Produto> produtos = new ArrayList<>();
+        List<Aula169Produto> produtos = new LinkedList<>();
         produtos.add(new Aula169Produto(5L, "Tomate", 19.90, 0));
         produtos.add(new Aula169Produto(1L, "Pimentao", 9.90, 5));
         produtos.add(new Aula169Produto(4L, "Cenoura", 6.90, 0));
