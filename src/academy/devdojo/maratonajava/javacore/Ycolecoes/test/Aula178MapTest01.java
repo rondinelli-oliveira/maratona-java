@@ -1,6 +1,5 @@
 package academy.devdojo.maratonajava.javacore.Ycolecoes.test;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
