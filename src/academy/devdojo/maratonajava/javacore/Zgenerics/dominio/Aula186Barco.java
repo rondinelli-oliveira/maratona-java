@@ -13,4 +13,8 @@ public class Aula186Barco {
                 "nome='" + nome + '\'' +
                 '}';
     }
+
+    public String getNome() {
+        return nome;
+    }
 }
