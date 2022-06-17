@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ZZEatreams.test;
+package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
-import academy.devdojo.maratonajava.javacore.ZZEatreams.dominio.Aula203LightNovel;
+import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Aula203LightNovel;
 
 import java.util.ArrayList;
 import java.util.Comparator;
