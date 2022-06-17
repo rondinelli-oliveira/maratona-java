@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.ZZEatreams.dominio;
 
+import java.util.Objects;
+
 public class Aula203LightNovel {
     private String title;
     private double price;
@@ -23,5 +25,18 @@ public class Aula203LightNovel {
                 "title='" + title + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aula203LightNovel that = (Aula203LightNovel) o;
+        return Objects.equals(title, that.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title);
     }
 }
