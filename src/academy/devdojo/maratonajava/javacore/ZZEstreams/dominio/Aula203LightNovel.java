@@ -5,10 +5,17 @@ import java.util.Objects;
 public class Aula203LightNovel {
     private String title;
     private double price;
+    private Aula214Category category;
 
     public Aula203LightNovel(String title, double price) {
         this.title = title;
         this.price = price;
+    }
+
+    public Aula203LightNovel(String title, double price, Aula214Category category) {
+        this.title = title;
+        this.price = price;
+        this.category = category;
     }
 
     public String getTitle() {
@@ -19,11 +26,16 @@ public class Aula203LightNovel {
         return price;
     }
 
+    public Aula214Category getCategory() {
+        return category;
+    }
+
     @Override
     public String toString() {
         return "Aula203LightNovel{" +
                 "title='" + title + '\'' +
                 ", price=" + price +
+                ", category=" + category +
                 '}';
     }
 
