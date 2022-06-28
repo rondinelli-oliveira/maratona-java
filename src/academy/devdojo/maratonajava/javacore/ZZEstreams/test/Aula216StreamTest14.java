@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.groupingBy;
 
-public class Aula216StreamTest1 {
+public class Aula216StreamTest14 {
     private static List<Aula203LightNovel> lightNovels = new ArrayList<>(List.of(
             new Aula203LightNovel("Caverna do Dragao", 8.99, Aula214Category.FANTASY),
             new Aula203LightNovel("Pluto", 10.90, Aula214Category.FANTASY),
@@ -21,7 +21,6 @@ public class Aula216StreamTest1 {
             new Aula203LightNovel("Pica-pau", 1.99, Aula214Category.FANTASY),
             new Aula203LightNovel("Snoop", 4.00, Aula214Category.ROMANCE)
     ));
-
 
     public static void main(String[] args) {
         Map<Aula214Category, Long> collect = lightNovels.stream().collect(groupingBy(Aula203LightNovel::getCategory, Collectors.counting()));

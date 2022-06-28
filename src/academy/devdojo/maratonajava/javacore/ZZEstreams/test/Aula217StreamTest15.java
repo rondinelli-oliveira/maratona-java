@@ -4,15 +4,13 @@ import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Aula203LightNove
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Aula214Category;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Aula215Promotion;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Aula215Promotion.NORMAL_PRICE;
 import static academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Aula215Promotion.UNDER_PROMOTION;
-import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.*;
 
-public class Aula215StreamTest13 {
+public class Aula217StreamTest15 {
     private static List<Aula203LightNovel> lightNovels = new ArrayList<>(List.of(
             new Aula203LightNovel("Caverna do Dragao", 8.99, Aula214Category.FANTASY),
             new Aula203LightNovel("Pluto", 10.90, Aula214Category.FANTASY),
@@ -24,20 +22,20 @@ public class Aula215StreamTest13 {
             new Aula203LightNovel("Snoop", 4.00, Aula214Category.ROMANCE)
     ));
 
-
     public static void main(String[] args) {
-        Map<Aula215Promotion, List<Aula203LightNovel>> collect = lightNovels
-                .stream()
-                .collect(groupingBy(Aula215StreamTest13::getAula215Promotion
-                ));
+        Map<Aula214Category, DoubleSummaryStatistics> collect = lightNovels.stream()
+                .collect(groupingBy(Aula203LightNovel::getCategory, summarizingDouble(Aula203LightNovel::getPrice)));
         System.out.println(collect);
-        // Map<Category, Map<Promotion, List<LightNovel>>>
+        // Map<Category, List<Promotion>>
 
-        Map<Aula214Category, Map<Aula215Promotion, List<Aula203LightNovel>>> collect1 = lightNovels
-                .stream()
-                .collect(groupingBy(Aula203LightNovel::getCategory, groupingBy(Aula215StreamTest13::getAula215Promotion
-                )));
+        Map<Aula214Category, Set<Aula215Promotion>> collect1 = lightNovels.stream()
+                .collect(groupingBy(Aula203LightNovel::getCategory, mapping(Aula217StreamTest15::getAula215Promotion, toSet())));
         System.out.println(collect1);
+
+        Map<Aula214Category, LinkedHashSet<Aula215Promotion>> collect2 = lightNovels.stream()
+                .collect(groupingBy(Aula203LightNovel::getCategory, mapping(Aula217StreamTest15::getAula215Promotion,
+                        toCollection(LinkedHashSet::new))));
+        System.out.println(collect2);
     }
 
     private static Aula215Promotion getAula215Promotion(Aula203LightNovel ln) {
