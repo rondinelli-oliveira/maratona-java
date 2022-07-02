@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.ZZFthreads.test;
 import academy.devdojo.maratonajava.javacore.ZZFthreads.dominio.Aula224Account;
 
 public class Aula224ThreadAccountTest01 implements Runnable {
-    private Aula224Account aula224Account = new Aula224Account();
+    private final Aula224Account aula224Account = new Aula224Account();
 
     public static void main(String[] args) {
         Aula224ThreadAccountTest01 threadAccountTest01 = new Aula224ThreadAccountTest01();
@@ -24,12 +24,16 @@ public class Aula224ThreadAccountTest01 implements Runnable {
     }
 
     private void withdrawal(int amount) {
-        if (aula224Account.getBalance() >= amount) {
-            System.out.println(getThreadName() + " está indo sacar dinheiro");
-            aula224Account.withdrawal(amount);
-            System.out.println(getThreadName() + " completou o saque, valor atual da conta " + aula224Account.getBalance());
-        } else {
-            System.out.println("Sem dinheiro para " + getThreadName() + " efetuar o saque " + aula224Account.getBalance());
+        System.out.println(getThreadName() + " #### fora do synchronized");
+        synchronized (aula224Account) {
+            System.out.println(getThreadName() + " **** dentro do synchronized");
+            if (aula224Account.getBalance() >= amount) {
+                System.out.println(getThreadName() + " está indo sacar dinheiro");
+                aula224Account.withdrawal(amount);
+                System.out.println(getThreadName() + " completou o saque, valor atual da conta " + aula224Account.getBalance());
+            } else {
+                System.out.println("Sem dinheiro para " + getThreadName() + " efetuar o saque " + aula224Account.getBalance());
+            }
         }
     }
 
