@@ -8,10 +8,10 @@ import javax.swing.*;
 public class Aula228EmailDeliveryTest01 {
     public static void main(String[] args) {
         Aula228Members members = new Aula228Members();
-        Thread jiraya = new Thread(new Aula228EmailDeliveryService(members), "Rondinelli");
-        Thread kakashi = new Thread(new Aula228EmailDeliveryService(members), "Flavia");
-        jiraya.start();
-        kakashi.start();
+        Thread rondinelli = new Thread(new Aula228EmailDeliveryService(members), "Rondinelli");
+        Thread flavia = new Thread(new Aula228EmailDeliveryService(members), "Flavia");
+        rondinelli.start();
+        flavia.start();
         while(true){
             String email = JOptionPane.showInputDialog("Entre com seu email");
             if(email == null || email.isEmpty()){
