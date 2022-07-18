@@ -5,7 +5,7 @@ import academy.devdojo.maratonajava.javacore.ZZGconcorrencia.service.Aula243Stor
 
 import java.util.List;
 
-public class Aula43CompletableFutureTest04 {
+public class Aula243CompletableFutureTest04 {
     public static void main(String[] args) {
         Aula243StoreServiceWithDiscount service = new Aula243StoreServiceWithDiscount();
         searchPricesWithDiscount(service);
