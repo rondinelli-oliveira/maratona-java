@@ -57,4 +57,8 @@ public class Aula246Person {
             return new Aula246Person(firstName, lastName, username, email);
         }
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
 }
