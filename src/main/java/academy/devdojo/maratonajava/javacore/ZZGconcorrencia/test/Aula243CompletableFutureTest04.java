@@ -11,7 +11,8 @@ public class Aula243CompletableFutureTest04 {
         searchPricesWithDiscount(service);
     }
 
-    private static void searchPricesWithDiscount(Aula243StoreServiceWithDiscount service){
+    private static void searchPricesWithDiscount(Aula243StoreServiceWithDiscount service) {
+        long start = System.currentTimeMillis();
         List<String> stores = List.of("Store 1", "Store 2", "Store 3", "Store 4");
 //        stores.forEach(s -> System.out.println(service.getPriceSync(s)));
         stores.stream()
@@ -19,5 +20,8 @@ public class Aula243CompletableFutureTest04 {
                 .map(Aula243Quote::newQuote)
                 .map(service::applyDiscount)
                 .forEach(System.out::println);
+
+        long end = System.currentTimeMillis();
+        System.out.printf("Time passed to searchPricesSync %dms%n", (end - start));
     }
 }

@@ -24,7 +24,7 @@ public class Aula242CompletableFutureTest03 {
 
         List<String> stores = List.of("Store 1", "Store 2", "Store 3", "Store 4");
         List<CompletableFuture<Double>> completableFutures = stores.stream()
-                .map(s -> CompletableFuture.supplyAsync(() -> storeService.getPriceSync(s),executor))
+                .map(s -> CompletableFuture.supplyAsync(() -> storeService.getPriceSync(s), executor))
                 .collect(Collectors.toList());
 
         List<Double> prices = completableFutures.stream()

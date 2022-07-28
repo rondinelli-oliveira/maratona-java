@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.javacore.ZZGconcorrencia.dominio;
 
 // storeName:price:discountCode
-public class Aula243Quote {
+public final class Aula243Quote {
     private final String store;
     private final double price;
     private final Aula243Discount.Code discountCode;
@@ -25,7 +25,7 @@ public class Aula243Quote {
 
     @Override
     public String toString() {
-        return "Quote{" +
+        return "Aula243Quote{" +
                 "store='" + store + '\'' +
                 ", price=" + price +
                 ", discountCode=" + discountCode +
