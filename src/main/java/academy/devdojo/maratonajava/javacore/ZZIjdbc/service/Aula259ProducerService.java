@@ -9,10 +9,19 @@ public class Aula259ProducerService {
         Aula257ProducerRepository.save(producer);
     }
 
-    public static void delete(int id) {
-        if (id <= 0) {
+    public static void delete(Integer id) {
+        requireValidId(id);
+        Aula257ProducerRepository.delete(id);
+    }
+
+    public static void update(Aula257Producer producer) {
+        requireValidId(producer.getId());
+        Aula257ProducerRepository.update(producer);
+    }
+
+    private static void requireValidId(Integer id) {
+        if (id == null || id <= 0) {
             throw new IllegalArgumentException("Invalid value for id!");
         }
-        Aula257ProducerRepository.delete(id);
     }
 }

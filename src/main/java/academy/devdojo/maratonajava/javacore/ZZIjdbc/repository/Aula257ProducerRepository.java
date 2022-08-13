@@ -3,7 +3,6 @@ package academy.devdojo.maratonajava.javacore.ZZIjdbc.repository;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.conn.Aula255ConectionFactory;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.dominio.Aula257Producer;
 import lombok.extern.log4j.Log4j2;
-import lombok.extern.slf4j.Slf4j;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -27,9 +26,21 @@ public class Aula257ProducerRepository {
         try (Connection conn = Aula255ConectionFactory.getConnection();
              Statement stmt = conn.createStatement()) {
             int rowsAffected = stmt.executeUpdate(sql);
-            log.info("Deleted producer com id: '{}' from database, row(s) affected '{}'.",id, rowsAffected);
+            log.info("Deleted producer with id: '{}' from database, row(s) affected '{}'.",id, rowsAffected);
         } catch (SQLException e) {
             log.error("Failed to delete producer '{}' in database", id, e);
+        }
+    }
+
+    public static void update(Aula257Producer producer) {
+        String sql = "UPDATE `anime_store`.`producer` SET `name` = '%s' WHERE (`id` = '%d');"
+                .formatted(producer.getName(), producer.getId());
+        try (Connection conn = Aula255ConectionFactory.getConnection();
+             Statement stmt = conn.createStatement()) {
+            int rowsAffected = stmt.executeUpdate(sql);
+            log.info("Updated producer with id: '{}', row(s) affected '{}'.",producer.getId(), rowsAffected);
+        } catch (SQLException e) {
+            log.error("Failed to update producer '{}' in database", producer.getId(), e);
         }
     }
 }

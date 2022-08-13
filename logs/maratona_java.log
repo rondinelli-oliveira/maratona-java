@@ -106,3 +106,6 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2022-08-13 14:06:04,359 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 44 from database, row(s) affected `1`.
 2022-08-13 14:06:04,380 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 45 from database, row(s) affected `1`.
 2022-08-13 14:06:04,399 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 46 from database, row(s) affected `1`.
+2022-08-13 16:41:53,885 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer with id: '5' from database, row(s) affected '0'.
+2022-08-13 17:00:29,571 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Updated producer with id: '1', row(s) affected '1'.
+2022-08-13 17:03:24,284 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Updated producer with id: '1', row(s) affected '1'.

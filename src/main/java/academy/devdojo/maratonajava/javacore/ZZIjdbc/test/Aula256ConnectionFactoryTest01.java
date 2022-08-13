@@ -8,8 +8,13 @@ public class Aula256ConnectionFactoryTest01 {
         Aula257Producer producer = Aula257Producer
                 .builder()
                 .name("Rondinelli413")
+                .build();Aula257Producer producerToUpdate = Aula257Producer
+                .builder()
+                .id(1)
+                .name("Rondinelli413")
                 .build();
 //        Aula259ProducerService.save(producer);
-        Aula259ProducerService.delete(5);
+//        Aula259ProducerService.delete(5);
+        Aula259ProducerService.update(producerToUpdate);
     }
 }
