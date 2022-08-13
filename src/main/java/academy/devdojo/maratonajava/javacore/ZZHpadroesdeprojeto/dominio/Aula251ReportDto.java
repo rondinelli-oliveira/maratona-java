@@ -6,6 +6,7 @@ public class Aula251ReportDto {
     private Aula247Currency currency;
     private String personName;
 
+
     public static final class Aula251ReportDtoBuilder {
         private String aircraftName;
         private Aula247Country country;
@@ -40,12 +41,12 @@ public class Aula251ReportDto {
         }
 
         public Aula251ReportDto build() {
-            Aula251ReportDto reportDto = new Aula251ReportDto();
-            reportDto.currency = this.currency;
-            reportDto.aircraftName = this.aircraftName;
-            reportDto.personName = this.personName;
-            reportDto.country = this.country;
-            return reportDto;
+            Aula251ReportDto aula251ReportDto = new Aula251ReportDto();
+            aula251ReportDto.aircraftName = this.aircraftName;
+            aula251ReportDto.personName = this.personName;
+            aula251ReportDto.country = this.country;
+            aula251ReportDto.currency = this.currency;
+            return aula251ReportDto;
         }
     }
 

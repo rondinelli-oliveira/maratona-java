@@ -4,7 +4,8 @@ import academy.devdojo.maratonajava.javacore.ZZHpadroesdeprojeto.dominio.Aula246
 
 public class Aula246BuilderPatternTest01 {
     public static void main(String[] args) {
-        Aula246Person build = new Aula246Person.Aula246PersonBuilder()
+        Aula246Person build = Aula246Person.Aula246PersonBuilder
+                .builder()
                 .firstName("Rondinelli")
                 .lastName("Oliveira")
                 .username("rondinelli413")

@@ -25,12 +25,17 @@ public class Aula246Person {
 
 
     public static final class Aula246PersonBuilder {
+
         private String firstName;
         private String lastName;
         private String username;
         private String email;
 
-        public Aula246PersonBuilder() {
+        private Aula246PersonBuilder() {
+        }
+
+        public static Aula246PersonBuilder builder() {
+            return new Aula246PersonBuilder();
         }
 
         public Aula246PersonBuilder firstName(String firstName) {
