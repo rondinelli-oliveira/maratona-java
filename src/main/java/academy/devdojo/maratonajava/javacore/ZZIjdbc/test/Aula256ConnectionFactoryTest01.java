@@ -5,9 +5,9 @@ import academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerR
 
 public class Aula256ConnectionFactoryTest01 {
     public static void main(String[] args) {
-        Aula257Producer producer = Aula257Producer.Aula257ProducerBuilder
+        Aula257Producer producer = Aula257Producer
                 .builder()
-                .name("Aula256Producer")
+                .name("Rondinelli413")
                 .build();
         Aula257ProducerRepository.save(producer);
     }
