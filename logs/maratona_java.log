@@ -109,3 +109,10 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2022-08-13 16:41:53,885 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer with id: '5' from database, row(s) affected '0'.
 2022-08-13 17:00:29,571 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Updated producer with id: '1', row(s) affected '1'.
 2022-08-13 17:03:24,284 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Updated producer with id: '1', row(s) affected '1'.
+2022-08-13 19:39:21,248 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 19:43:16,795 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 19:43:17,188 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413), Aula257Producer(id=2, name=Aula256Producer), Aula257Producer(id=3, name=Gabriel)]'.
+2022-08-13 19:44:29,095 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 19:44:29,494 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '3'.
+2022-08-13 19:48:39,220 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 19:48:39,608 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '3'.
