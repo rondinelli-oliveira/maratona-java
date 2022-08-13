@@ -16,10 +16,20 @@ public class Aula257ProducerRepository {
         try (Connection conn = Aula255ConectionFactory.getConnection();
              Statement stmt = conn.createStatement()) {
             int rowsAffected = stmt.executeUpdate(sql);
-            log.info("Inserted producer in database, row(s) affected `{}`.", rowsAffected);
-//            System.out.println(rowsAffected);
+            log.info("Inserted producer '{}' in database, row(s) affected '{}'.",producer.getName(), rowsAffected);
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error("Failed to insert producer '{}' in database", producer.getName(), e);
+        }
+    }
+
+    public static void delete(int id) {
+        String sql = "DELETE FROM `anime_store`.`producer` WHERE (`id` = '%d');".formatted(id);
+        try (Connection conn = Aula255ConectionFactory.getConnection();
+             Statement stmt = conn.createStatement()) {
+            int rowsAffected = stmt.executeUpdate(sql);
+            log.info("Deleted producer com id: '{}' from database, row(s) affected '{}'.",id, rowsAffected);
+        } catch (SQLException e) {
+            log.error("Failed to delete producer '{}' in database", id, e);
         }
     }
 }

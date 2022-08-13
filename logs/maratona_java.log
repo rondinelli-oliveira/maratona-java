@@ -19,3 +19,90 @@
 2022-08-13 13:18:31,423 [main] INFO  academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Inserted producer in database, row(s) affected `1`.
 2022-08-13 13:19:10,904 [main]INFO  academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Inserted producer in database, row(s) affected `1`.
 2022-08-13 13:19:31,945 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Inserted producer in database, row(s) affected `1`.
+2022-08-13 13:57:31,819 [main] ERRORacademy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Failed to delete producer 4 in database
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`name`) WHERE (`id` = '4')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245) ~[mysql-connector-java-8.0.30.jar:8.0.30]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository.delete(Aula257ProducerRepository.java:29) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula259ProducerService.delete(Aula259ProducerService.java:16) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01.main(Aula256ConnectionFactoryTest01.java:13) ~[classes/:?]
+2022-08-13 14:01:34,096 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer 4 from database, row(s) affected `1`.
+2022-08-13 14:04:59,303 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 5 from database, row(s) affected `1`.
+2022-08-13 14:04:59,340 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 6 from database, row(s) affected `1`.
+2022-08-13 14:04:59,376 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 7 from database, row(s) affected `1`.
+2022-08-13 14:04:59,409 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 8 from database, row(s) affected `1`.
+2022-08-13 14:04:59,444 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 9 from database, row(s) affected `1`.
+2022-08-13 14:04:59,470 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 10 from database, row(s) affected `1`.
+2022-08-13 14:04:59,503 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 11 from database, row(s) affected `1`.
+2022-08-13 14:04:59,535 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 12 from database, row(s) affected `1`.
+2022-08-13 14:04:59,562 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 13 from database, row(s) affected `1`.
+2022-08-13 14:04:59,589 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 14 from database, row(s) affected `1`.
+2022-08-13 14:04:59,620 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 15 from database, row(s) affected `1`.
+2022-08-13 14:04:59,646 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 16 from database, row(s) affected `1`.
+2022-08-13 14:04:59,681 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 17 from database, row(s) affected `1`.
+2022-08-13 14:04:59,705 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 18 from database, row(s) affected `1`.
+2022-08-13 14:04:59,725 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 19 from database, row(s) affected `1`.
+2022-08-13 14:04:59,751 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 20 from database, row(s) affected `1`.
+2022-08-13 14:04:59,775 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 21 from database, row(s) affected `1`.
+2022-08-13 14:04:59,799 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 22 from database, row(s) affected `1`.
+2022-08-13 14:04:59,824 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 23 from database, row(s) affected `1`.
+2022-08-13 14:04:59,847 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 24 from database, row(s) affected `1`.
+2022-08-13 14:04:59,868 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 25 from database, row(s) affected `1`.
+2022-08-13 14:04:59,890 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 26 from database, row(s) affected `1`.
+2022-08-13 14:04:59,907 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 27 from database, row(s) affected `1`.
+2022-08-13 14:04:59,926 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 28 from database, row(s) affected `1`.
+2022-08-13 14:04:59,947 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 29 from database, row(s) affected `1`.
+2022-08-13 14:04:59,972 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 30 from database, row(s) affected `1`.
+2022-08-13 14:04:59,996 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 31 from database, row(s) affected `1`.
+2022-08-13 14:05:00,029 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 32 from database, row(s) affected `1`.
+2022-08-13 14:05:00,056 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 33 from database, row(s) affected `1`.
+2022-08-13 14:05:00,076 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 34 from database, row(s) affected `1`.
+2022-08-13 14:05:00,092 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 35 from database, row(s) affected `1`.
+2022-08-13 14:05:00,111 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 36 from database, row(s) affected `1`.
+2022-08-13 14:05:00,127 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 37 from database, row(s) affected `1`.
+2022-08-13 14:05:00,144 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 38 from database, row(s) affected `1`.
+2022-08-13 14:06:03,443 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 5 from database, row(s) affected `0`.
+2022-08-13 14:06:03,479 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 6 from database, row(s) affected `0`.
+2022-08-13 14:06:03,522 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 7 from database, row(s) affected `0`.
+2022-08-13 14:06:03,550 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 8 from database, row(s) affected `0`.
+2022-08-13 14:06:03,579 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 9 from database, row(s) affected `0`.
+2022-08-13 14:06:03,602 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 10 from database, row(s) affected `0`.
+2022-08-13 14:06:03,629 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 11 from database, row(s) affected `0`.
+2022-08-13 14:06:03,654 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 12 from database, row(s) affected `0`.
+2022-08-13 14:06:03,681 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 13 from database, row(s) affected `0`.
+2022-08-13 14:06:03,707 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 14 from database, row(s) affected `0`.
+2022-08-13 14:06:03,732 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 15 from database, row(s) affected `0`.
+2022-08-13 14:06:03,757 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 16 from database, row(s) affected `0`.
+2022-08-13 14:06:03,786 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 17 from database, row(s) affected `0`.
+2022-08-13 14:06:03,828 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 18 from database, row(s) affected `0`.
+2022-08-13 14:06:03,866 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 19 from database, row(s) affected `0`.
+2022-08-13 14:06:03,895 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 20 from database, row(s) affected `0`.
+2022-08-13 14:06:03,919 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 21 from database, row(s) affected `0`.
+2022-08-13 14:06:03,943 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 22 from database, row(s) affected `0`.
+2022-08-13 14:06:03,969 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 23 from database, row(s) affected `0`.
+2022-08-13 14:06:03,995 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 24 from database, row(s) affected `0`.
+2022-08-13 14:06:04,016 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 25 from database, row(s) affected `0`.
+2022-08-13 14:06:04,035 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 26 from database, row(s) affected `0`.
+2022-08-13 14:06:04,054 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 27 from database, row(s) affected `0`.
+2022-08-13 14:06:04,071 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 28 from database, row(s) affected `0`.
+2022-08-13 14:06:04,088 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 29 from database, row(s) affected `0`.
+2022-08-13 14:06:04,105 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 30 from database, row(s) affected `0`.
+2022-08-13 14:06:04,123 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 31 from database, row(s) affected `0`.
+2022-08-13 14:06:04,142 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 32 from database, row(s) affected `0`.
+2022-08-13 14:06:04,160 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 33 from database, row(s) affected `0`.
+2022-08-13 14:06:04,178 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 34 from database, row(s) affected `0`.
+2022-08-13 14:06:04,197 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 35 from database, row(s) affected `0`.
+2022-08-13 14:06:04,213 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 36 from database, row(s) affected `0`.
+2022-08-13 14:06:04,228 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 37 from database, row(s) affected `0`.
+2022-08-13 14:06:04,241 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 38 from database, row(s) affected `0`.
+2022-08-13 14:06:04,257 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 39 from database, row(s) affected `1`.
+2022-08-13 14:06:04,280 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 40 from database, row(s) affected `1`.
+2022-08-13 14:06:04,302 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 41 from database, row(s) affected `1`.
+2022-08-13 14:06:04,321 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 42 from database, row(s) affected `1`.
+2022-08-13 14:06:04,338 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 43 from database, row(s) affected `1`.
+2022-08-13 14:06:04,359 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 44 from database, row(s) affected `1`.
+2022-08-13 14:06:04,380 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 45 from database, row(s) affected `1`.
+2022-08-13 14:06:04,399 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleted producer com id: 46 from database, row(s) affected `1`.
