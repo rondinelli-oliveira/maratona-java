@@ -20,7 +20,7 @@ public class Aula257ProducerRepository {
             int rowsAffected = stmt.executeUpdate(sql);
             log.info("Inserted producer '{}' in database, row(s) affected '{}'.", producer.getName(), rowsAffected);
         } catch (SQLException e) {
-            log.error("Failed to insert producer '{}' in database.", producer.getName(), e);
+            log.error("Fail to insert producer '{}' in database.", producer.getName(), e);
         }
     }
 
@@ -31,7 +31,7 @@ public class Aula257ProducerRepository {
             int rowsAffected = stmt.executeUpdate(sql);
             log.info("Deleted producer with id: '{}' from database, row(s) affected '{}'.", id, rowsAffected);
         } catch (SQLException e) {
-            log.error("Failed to delete producer '{}' in database.", id, e);
+            log.error("Fail to delete producer '{}' in database.", id, e);
         }
     }
 
@@ -43,7 +43,7 @@ public class Aula257ProducerRepository {
             int rowsAffected = stmt.executeUpdate(sql);
             log.info("Updated producer with id: '{}', row(s) affected '{}'.", producer.getId(), rowsAffected);
         } catch (SQLException e) {
-            log.error("Failed to update producer '{}' in database.", producer.getId(), e);
+            log.error("Fail to update producer '{}' in database.", producer.getId(), e);
         }
     }
 
@@ -65,7 +65,29 @@ public class Aula257ProducerRepository {
                 producers.add(producer);
             }
         } catch (SQLException e) {
-            log.error("Failed while trying to find all update producers.");
+            log.error("Fail while trying to find all update producers.");
+        }
+        return producers;
+    }
+
+    public static List<Aula257Producer> findByName(String name) {
+        log.info("Listing producer(s) by name.");
+        String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
+                .formatted(name);
+        List<Aula257Producer> producers = new ArrayList<>();
+        try (Connection conn = Aula255ConectionFactory.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                Aula257Producer producer = Aula257Producer
+                        .builder()
+                        .id(rs.getInt("id"))
+                        .name(rs.getString("name"))
+                        .build();
+                producers.add(producer);
+            }
+        } catch (SQLException e) {
+            log.error("Fail while trying to find producer.");
         }
         return producers;
     }

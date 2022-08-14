@@ -25,6 +25,10 @@ public class Aula259ProducerService {
         return Aula257ProducerRepository.findAll();
     }
 
+    public static List<Aula257Producer> findByName(String name) {
+        return Aula257ProducerRepository.findByName(name);
+    }
+
     private static void requireValidId(Integer id) {
         if (id == null || id <= 0) {
             throw new IllegalArgumentException("Invalid value for id!");

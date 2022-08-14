@@ -116,3 +116,19 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2022-08-13 19:44:29,494 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '3'.
 2022-08-13 19:48:39,220 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
 2022-08-13 19:48:39,608 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '3'.
+2022-08-13 20:47:58,054 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 20:47:58,461 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '0'.
+2022-08-13 20:49:42,143 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 20:49:42,545 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '3'.
+2022-08-13 20:50:27,950 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 20:50:28,361 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '1'.
+2022-08-13 20:56:27,201 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 20:56:27,632 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '1'.
+2022-08-13 20:57:35,311 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 20:57:35,771 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413)]'.
+2022-08-13 20:58:17,118 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing all producers.
+2022-08-13 20:58:17,535 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413), Aula257Producer(id=2, name=Aula256Producer), Aula257Producer(id=3, name=Gabriel)]'.
+2022-08-13 20:59:38,344 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing producers for name.
+2022-08-13 20:59:38,763 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413), Aula257Producer(id=2, name=Aula256Producer), Aula257Producer(id=3, name=Gabriel)]'.
+2022-08-13 20:59:59,506 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing producer(s) for name.
+2022-08-13 20:59:59,939 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413), Aula257Producer(id=2, name=Aula256Producer), Aula257Producer(id=3, name=Gabriel)]'.
