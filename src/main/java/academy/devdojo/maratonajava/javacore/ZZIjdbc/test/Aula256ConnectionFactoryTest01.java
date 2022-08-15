@@ -23,7 +23,8 @@ public class Aula256ConnectionFactoryTest01 {
 //        Aula259ProducerService.update(producerToUpdate);
 //        List<Aula257Producer> producers = Aula259ProducerService.findAll();
 //        log.info("Producers found: '{}'.", producers.size());
-        List<Aula257Producer> producers = Aula259ProducerService.findByName("R");
-        log.info("Producers found: '{}'.", producers);
+//        List<Aula257Producer> producers = Aula259ProducerService.findByName("R");
+//        log.info("Producers found: '{}'.", producers);
+        Aula259ProducerService.showProducerMetaData();
     }
 }
