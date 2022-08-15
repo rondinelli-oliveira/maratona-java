@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.ZZIjdbc.repository;
 
-import academy.devdojo.maratonajava.javacore.ZZIjdbc.conn.Aula255ConectionFactory;
+import academy.devdojo.maratonajava.javacore.ZZIjdbc.conn.Aula255ConnectionFactory;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.dominio.Aula257Producer;
 import lombok.extern.log4j.Log4j2;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class Aula257ProducerRepository {
     public static void save(Aula257Producer producer) {
         String sql = "INSERT INTO `anime_store`.`producer` (`name`) VALUES ('%s');".formatted(producer.getName());
-        try (Connection conn = Aula255ConectionFactory.getConnection();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
              Statement stmt = conn.createStatement()) {
             int rowsAffected = stmt.executeUpdate(sql);
             log.info("Inserted producer '{}' in database, row(s) affected '{}'.", producer.getName(), rowsAffected);
@@ -23,7 +23,7 @@ public class Aula257ProducerRepository {
 
     public static void delete(int id) {
         String sql = "DELETE FROM `anime_store`.`producer` WHERE (`id` = '%d');".formatted(id);
-        try (Connection conn = Aula255ConectionFactory.getConnection();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
              Statement stmt = conn.createStatement()) {
             int rowsAffected = stmt.executeUpdate(sql);
             log.info("Deleted producer with id: '{}' from database, row(s) affected '{}'.", id, rowsAffected);
@@ -35,7 +35,7 @@ public class Aula257ProducerRepository {
     public static void update(Aula257Producer producer) {
         String sql = "UPDATE `anime_store`.`producer` SET `name` = '%s' WHERE (`id` = '%d');"
                 .formatted(producer.getName(), producer.getId());
-        try (Connection conn = Aula255ConectionFactory.getConnection();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
              Statement stmt = conn.createStatement()) {
             int rowsAffected = stmt.executeUpdate(sql);
             log.info("Updated producer with id: '{}', row(s) affected '{}'.", producer.getId(), rowsAffected);
@@ -48,7 +48,7 @@ public class Aula257ProducerRepository {
         log.info("Listing all producers.");
         String sql = "SELECT id, name FROM `anime_store`.`producer`;";
         List<Aula257Producer> producers = new ArrayList<>();
-        try (Connection conn = Aula255ConectionFactory.getConnection();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
@@ -72,7 +72,7 @@ public class Aula257ProducerRepository {
         String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
                 .formatted(name);
         List<Aula257Producer> producers = new ArrayList<>();
-        try (Connection conn = Aula255ConectionFactory.getConnection();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
@@ -92,11 +92,10 @@ public class Aula257ProducerRepository {
     public static void showProducerMetaData() {
         log.info("Showing Producer Metadata.");
         String sql = "SELECT * FROM `anime_store`.`producer`";
-        try (Connection conn = Aula255ConectionFactory.getConnection();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
             ResultSetMetaData rsMetaData = rs.getMetaData();
-            rs.next();
             int columnCount = rsMetaData.getColumnCount();
             log.info("Columns count: '{}'", columnCount);
             for (int i = 1; i <= columnCount; i++) {
@@ -107,6 +106,33 @@ public class Aula257ProducerRepository {
             }
         } catch (SQLException e) {
             log.error("Error while trying to find all producers.", e);
+        }
+    }
+
+    public static void showDriverMetaData() {
+        log.info("Showing Driver Metadata");
+        try (Connection conn = Aula255ConnectionFactory.getConnection()) {
+            DatabaseMetaData dbMetaData = conn.getMetaData();
+            if(dbMetaData.supportsResultSetType(ResultSet.TYPE_FORWARD_ONLY)){
+                log.info("Supports TYPE_FORWARD_ONLY");
+                if(dbMetaData.supportsResultSetConcurrency(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_UPDATABLE)){
+                    log.info("And Supports CONCUR_UPDATABLE");
+                }
+            }
+            if(dbMetaData.supportsResultSetType(ResultSet.TYPE_SCROLL_INSENSITIVE)){
+                log.info("Supports TYPE_SCROLL_INSENSITIVE");
+                if(dbMetaData.supportsResultSetConcurrency(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE)){
+                    log.info("And Supports CONCUR_UPDATABLE");
+                }
+            }
+            if(dbMetaData.supportsResultSetType(ResultSet.TYPE_SCROLL_SENSITIVE)){
+                log.info("Supports TYPE_SCROLL_SENSITIVE");
+                if(dbMetaData.supportsResultSetConcurrency(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE)){
+                    log.info("And Supports CONCUR_UPDATABLE");
+                }
+            }
+        } catch (SQLException e) {
+            log.error("Error while trying to find all producers", e);
         }
     }
 }

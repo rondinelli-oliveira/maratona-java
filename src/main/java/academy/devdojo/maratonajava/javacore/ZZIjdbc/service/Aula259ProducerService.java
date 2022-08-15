@@ -33,6 +33,10 @@ public class Aula259ProducerService {
         Aula257ProducerRepository.showProducerMetaData();
     }
 
+    public static void showDriverMetaData() {
+        Aula257ProducerRepository.showDriverMetaData();
+    }
+
     private static void requireValidId(Integer id) {
         if (id == null || id <= 0) {
             throw new IllegalArgumentException("Invalid value for id!");
