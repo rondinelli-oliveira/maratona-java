@@ -33,3 +33,52 @@
 2022-08-15 11:32:06,965 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - And Supports CONCUR_UPDATABLE
 2022-08-15 11:32:06,965 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Supports TYPE_SCROLL_INSENSITIVE
 2022-08-15 11:32:06,965 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - And Supports CONCUR_UPDATABLE
+2022-08-15 14:45:40,226 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Showing Driver Metadata
+2022-08-15 14:45:40,673 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Supports TYPE_FORWARD_ONLY
+2022-08-15 14:45:40,674 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - And Supports CONCUR_UPDATABLE
+2022-08-15 14:45:40,674 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Supports TYPE_SCROLL_INSENSITIVE
+2022-08-15 14:45:40,674 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - And Supports CONCUR_UPDATABLE
+2022-08-15 14:46:22,910 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Last row? 'true'
+2022-08-15 14:46:22,913 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '3'
+2022-08-15 14:46:22,914 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=3, name=Gabriel)
+2022-08-15 14:46:22,914 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - First row? 'true'
+2022-08-15 14:46:22,914 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '1'
+2022-08-15 14:46:22,914 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=1, name=Rondinelli413)
+2022-08-15 14:46:22,914 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row Absolute? 'true'
+2022-08-15 14:46:22,914 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '2'
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=2, name=Aula256Producer)
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row relative ? 'true'
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '1'
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=1, name=Rondinelli413)
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - is last? 'false'
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '1'
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - is first? 'true'
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '1'
+2022-08-15 14:46:22,915 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Last row? 'true'
+2022-08-15 14:46:22,916 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - ------------------
+2022-08-15 14:46:22,916 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - After last row? 'true'
+2022-08-15 14:46:22,917 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=3, name=Gabriel)
+2022-08-15 14:46:22,917 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=2, name=Aula256Producer)
+2022-08-15 14:46:22,917 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=1, name=Rondinelli413)
+2022-08-15 21:23:08,539 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Last row? 'true'
+2022-08-15 21:23:08,541 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '3'
+2022-08-15 21:23:08,542 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=3, name=Gabriel)
+2022-08-15 21:23:08,542 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - First row? 'true'
+2022-08-15 21:23:08,542 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '1'
+2022-08-15 21:23:08,542 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=1, name=Rondinelli413)
+2022-08-15 21:23:08,542 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row Absolute? 'true'
+2022-08-15 21:23:08,542 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '2'
+2022-08-15 21:23:08,542 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=2, name=Aula256Producer)
+2022-08-15 21:23:08,543 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row relative ? 'true'
+2022-08-15 21:23:08,543 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '1'
+2022-08-15 21:23:08,543 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=1, name=Rondinelli413)
+2022-08-15 21:23:08,543 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - is last? 'false'
+2022-08-15 21:23:08,543 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '1'
+2022-08-15 21:23:08,544 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - is first? 'true'
+2022-08-15 21:23:08,544 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Row number '1'
+2022-08-15 21:23:08,544 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Last row? 'true'
+2022-08-15 21:23:08,544 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - ------------------
+2022-08-15 21:23:08,544 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - After last row? 'true'
+2022-08-15 21:23:08,544 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=3, name=Gabriel)
+2022-08-15 21:23:08,544 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=2, name=Aula256Producer)
+2022-08-15 21:23:08,544 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Aula257Producer(id=1, name=Rondinelli413)
