@@ -41,6 +41,10 @@ public class Aula259ProducerService {
         Aula257ProducerRepository.showTypeScrollWorking();
     }
 
+    public static List<Aula257Producer> findByNameAndUpdateByToUpperCase(String name) {
+        return Aula257ProducerRepository.findByNameAndUpdateByToUpperCase(name);
+    }
+
     private static void requireValidId(Integer id) {
         if (id == null || id <= 0) {
             throw new IllegalArgumentException("Invalid value for id!");

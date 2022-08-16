@@ -4,6 +4,8 @@ import academy.devdojo.maratonajava.javacore.ZZIjdbc.dominio.Aula257Producer;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula259ProducerService;
 import lombok.extern.log4j.Log4j2;
 
+import java.util.List;
+
 @Log4j2
 public class Aula256ConnectionFactoryTest01 {
     public static void main(String[] args) {
@@ -25,6 +27,8 @@ public class Aula256ConnectionFactoryTest01 {
 //        log.info("Producers found: '{}'.", producers);
 //        Aula259ProducerService.showProducerMetaData();
 //        Aula259ProducerService.showDriverMetaData();
-        Aula259ProducerService.showTypeScrollWorking();
+//        Aula259ProducerService.showTypeScrollWorking();
+        List<Aula257Producer> producers = Aula259ProducerService.findByNameAndUpdateByToUpperCase("Ron");
+        log.info("Producers found: '{}'.", producers);
     }
 }

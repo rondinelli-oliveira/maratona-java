@@ -174,4 +174,28 @@ public class Aula257ProducerRepository {
             log.error("Error while trying to find all producers", e);
         }
     }
+
+    public static List<Aula257Producer> findByNameAndUpdateByToUpperCase(String name) {
+        log.info("Listing producer(s) by name.");
+        String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
+                .formatted(name);
+        List<Aula257Producer> producers = new ArrayList<>();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
+             Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                rs.updateString("name", rs.getString("name").toUpperCase());
+                rs.updateRow();
+                Aula257Producer producer = Aula257Producer
+                        .builder()
+                        .id(rs.getInt("id"))
+                        .name(rs.getString("name"))
+                        .build();
+                producers.add(producer);
+            }
+        } catch (SQLException e) {
+            log.error("Fail while trying to find producer.");
+        }
+        return producers;
+    }
 }
