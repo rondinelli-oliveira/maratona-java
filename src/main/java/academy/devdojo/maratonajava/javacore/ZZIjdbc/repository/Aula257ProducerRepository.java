@@ -185,6 +185,7 @@ public class Aula257ProducerRepository {
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
                 rs.updateString("name", rs.getString("name").toUpperCase());
+//                rs.cancelRowUpdates();
                 rs.updateRow();
                 Aula257Producer producer = Aula257Producer
                         .builder()
@@ -197,5 +198,54 @@ public class Aula257ProducerRepository {
             log.error("Fail while trying to find producer.");
         }
         return producers;
+    }
+
+    public static List<Aula257Producer> findByNameAndInsertWhenNotFound(String name) {
+        log.info("Insert producer(s) by name.");
+        String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
+                .formatted(name);
+        List<Aula257Producer> producers = new ArrayList<>();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
+             Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+             ResultSet rs = stmt.executeQuery(sql)) {
+            if (rs.next()) return producers;
+            insertNewProducer(name, rs);
+            producers.add(getAula257Producer(rs));
+        } catch (SQLException e) {
+            log.error("Fail while trying to insert producer.");
+        }
+        return producers;
+    }
+
+    public static void findByNameAndDelete(String name) {
+        String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
+                .formatted(name);
+        List<Aula257Producer> producers = new ArrayList<>();
+        try (Connection conn = Aula255ConnectionFactory.getConnection();
+             Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                log.info("Deleting '{}'", rs.getString("name"));
+                rs.deleteRow();
+            }
+        } catch (SQLException e) {
+            log.error("Fail while trying to deleting producer.");
+        }
+    }
+
+    private static void insertNewProducer(String name, ResultSet rs) throws SQLException {
+        rs.moveToInsertRow();
+        rs.updateString("name", name);
+        rs.insertRow();
+    }
+
+    private static Aula257Producer getAula257Producer(ResultSet rs) throws SQLException {
+        rs.beforeFirst();
+        rs.next();
+        return Aula257Producer
+                .builder()
+                .id(rs.getInt("id"))
+                .name(rs.getString("name"))
+                .build();
     }
 }

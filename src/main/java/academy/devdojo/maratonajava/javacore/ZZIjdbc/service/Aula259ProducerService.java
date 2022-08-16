@@ -45,6 +45,14 @@ public class Aula259ProducerService {
         return Aula257ProducerRepository.findByNameAndUpdateByToUpperCase(name);
     }
 
+    public static List<Aula257Producer> findByNameAndInsertWhenNotFound(String name) {
+        return Aula257ProducerRepository.findByNameAndInsertWhenNotFound(name);
+    }
+
+    public static void findByNameAndDelete(String name) {
+        Aula257ProducerRepository.findByNameAndDelete(name);
+    }
+
     private static void requireValidId(Integer id) {
         if (id == null || id <= 0) {
             throw new IllegalArgumentException("Invalid value for id!");
