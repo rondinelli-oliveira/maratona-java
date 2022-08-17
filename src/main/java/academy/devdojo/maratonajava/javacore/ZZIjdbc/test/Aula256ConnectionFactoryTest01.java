@@ -35,6 +35,8 @@ public class Aula256ConnectionFactoryTest01 {
 //        Aula259ProducerService.findByNameAndDelete("Felipe");
 //        List<Aula257Producer> producers = Aula259ProducerService.findByNamePreparedStatement("Ro");
 //        log.info("Producers found: '{}'.", producers);
-        Aula259ProducerService.updatePreparedStatement(producerToUpdate);
+//        Aula259ProducerService.updatePreparedStatement(producerToUpdate);
+        List<Aula257Producer> producers = Aula259ProducerService.findByNameCallableStatement("Ron");
+        log.info("Producers found: '{}'.", producers);
     }
 }
