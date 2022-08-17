@@ -29,6 +29,10 @@ public class Aula259ProducerService {
         return Aula257ProducerRepository.findByName(name);
     }
 
+    public static List<Aula257Producer> findByNamePreparedStatement(String name) {
+        return Aula257ProducerRepository.findByNamePreparedStatement(name);
+    }
+
     public static void showProducerMetaData() {
         Aula257ProducerRepository.showProducerMetaData();
     }

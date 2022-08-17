@@ -8,3 +8,5 @@
 2022-08-16 15:46:20,195 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=47, name=Felipe)]'.
 2022-08-16 16:35:22,843 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Listing producer(s) by name.
 2022-08-16 16:35:23,367 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Deleting 'Felipe'
+2022-08-16 21:56:52,221 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Finding Producer by name
+2022-08-16 21:56:52,764 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=RONDINELLI413), Aula257Producer(id=2, name=Aula256Producer)]'.
