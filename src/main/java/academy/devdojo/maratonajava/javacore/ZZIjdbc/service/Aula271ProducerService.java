@@ -11,4 +11,8 @@ public class Aula271ProducerService {
     public static List<Aula271Producer> findByNameJdbcRowSet(String name) {
         return Aula271ProducerRepository.findByNameJdbcRowSet(name);
     }
+
+    public static void updateJdbcRowSet(Aula271Producer producer) {
+        Aula271ProducerRepository.updateJdbcRowSet(producer);
+    }
 }

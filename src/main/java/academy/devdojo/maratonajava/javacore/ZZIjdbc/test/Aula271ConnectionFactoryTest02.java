@@ -9,7 +9,15 @@ import java.util.List;
 @Log4j2
 public class Aula271ConnectionFactoryTest02 {
     public static void main(String[] args) {
-        List<Aula271Producer> producers = Aula271ProducerService.findByNameJdbcRowSet("Rondinelli413");
+        Aula271Producer producerToUpdate = Aula271Producer
+                .builder()
+                .id(1)
+                .name("RONDINELLI413")
+                .build();
+        Aula271ProducerService.updateJdbcRowSet(producerToUpdate);
+        log.info("----------------------------------------------------");
+        List<Aula271Producer> producers = Aula271ProducerService.findByNameJdbcRowSet("");
         log.info("Producers found: '{}'.", producers);
+
     }
 }

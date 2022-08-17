@@ -87,7 +87,7 @@ public class Aula257ProducerRepository {
 
     public static List<Aula257Producer> findByName(String name) {
         log.info("Listing producer(s) by name.");
-        String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
+        String sql = "SELECT * FROM `anime_store`.`producer` WHERE name like '%%%s%%'"
                 .formatted(name);
         List<Aula257Producer> producers = new ArrayList<>();
         try (Connection conn = Aula255ConnectionFactory.getConnection();
@@ -129,7 +129,7 @@ public class Aula257ProducerRepository {
     }
 
     private static PreparedStatement preparedStatementFindByName(Connection conn, String name) throws SQLException {
-        String sql = "SELECT * FROM anime_store.producer where name like ?;";
+        String sql = "SELECT * FROM anime_store.producer WHERE name like ?;";
         PreparedStatement ps = conn.prepareStatement(sql);
         ps.setString(1, String.format("%%%s%%", name));
         return ps;
@@ -251,7 +251,7 @@ public class Aula257ProducerRepository {
 
     public static List<Aula257Producer> findByNameAndUpdateByToUpperCase(String name) {
         log.info("Listing producer(s) by name.");
-        String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
+        String sql = "SELECT * FROM `anime_store`.`producer` WHERE name like '%%%s%%'"
                 .formatted(name);
         List<Aula257Producer> producers = new ArrayList<>();
         try (Connection conn = Aula255ConnectionFactory.getConnection();
@@ -276,7 +276,7 @@ public class Aula257ProducerRepository {
 
     public static List<Aula257Producer> findByNameAndInsertWhenNotFound(String name) {
         log.info("Insert producer(s) by name.");
-        String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
+        String sql = "SELECT * FROM `anime_store`.`producer` WHERE name like '%%%s%%'"
                 .formatted(name);
         List<Aula257Producer> producers = new ArrayList<>();
         try (Connection conn = Aula255ConnectionFactory.getConnection();
@@ -292,7 +292,7 @@ public class Aula257ProducerRepository {
     }
 
     public static void findByNameAndDelete(String name) {
-        String sql = "SELECT * FROM `anime_store`.`producer` where name like '%%%s%%'"
+        String sql = "SELECT * FROM `anime_store`.`producer` WHERE name like '%%%s%%'"
                 .formatted(name);
         List<Aula257Producer> producers = new ArrayList<>();
         try (Connection conn = Aula255ConnectionFactory.getConnection();
