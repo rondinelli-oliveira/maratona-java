@@ -21,6 +21,11 @@ public class Aula259ProducerService {
         Aula257ProducerRepository.update(producer);
     }
 
+    public static void updatePreparedStatement(Aula257Producer producer) {
+        requireValidId(producer.getId());
+        Aula257ProducerRepository.updatePreparedStatement(producer);
+    }
+
     public static List<Aula257Producer> findAll() {
         return Aula257ProducerRepository.findAll();
     }
