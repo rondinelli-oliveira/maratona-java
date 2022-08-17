@@ -10,3 +10,14 @@
 2022-08-17 12:28:34,318 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[]'.
 2022-08-17 12:36:24,326 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Finding Producer by name
 2022-08-17 12:36:24,802 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413)]'.
+2022-08-17 15:54:08,666 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413)]'.
+2022-08-17 16:00:43,686 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
+2022-08-17 16:00:44,184 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413)]'.
+2022-08-17 16:01:22,903 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
+2022-08-17 16:01:23,387 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[]'.
+2022-08-17 16:01:48,844 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
+2022-08-17 16:01:49,285 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[]'.
+2022-08-17 16:06:40,939 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
+2022-08-17 16:06:41,360 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[]'.
+2022-08-17 16:07:22,777 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
+2022-08-17 16:07:23,258 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413)]'.
