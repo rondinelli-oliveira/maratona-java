@@ -1,78 +1,44 @@
-2022-08-17 08:41:07,399 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Finding Producer by name
-2022-08-17 08:41:08,006 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=RONDINELLI413), Aula257Producer(id=2, name=Aula256Producer)]'.
-2022-08-17 09:38:01,971 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Updated producer with id: '1', row(s) affected '1'.
-2022-08-17 09:38:42,751 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Updated producer with id: '1', row(s) affected '1'.
-2022-08-17 12:27:08,439 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Finding Producer by name
-2022-08-17 12:27:09,161 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413), Aula257Producer(id=2, name=Aula256Producer)]'.
-2022-08-17 12:27:18,634 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Finding Producer by name
-2022-08-17 12:27:19,234 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413), Aula257Producer(id=2, name=Aula256Producer), Aula257Producer(id=3, name=Gabriel)]'.
-2022-08-17 12:28:33,820 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Finding Producer by name
-2022-08-17 12:28:34,318 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[]'.
-2022-08-17 12:36:24,326 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula257ProducerRepository - Finding Producer by name
-2022-08-17 12:36:24,802 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula256ConnectionFactoryTest01 - Producers found: '[Aula257Producer(id=1, name=Rondinelli413)]'.
-2022-08-17 15:54:08,666 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413)]'.
-2022-08-17 16:00:43,686 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 16:00:44,184 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413)]'.
-2022-08-17 16:01:22,903 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 16:01:23,387 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[]'.
-2022-08-17 16:01:48,844 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 16:01:49,285 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[]'.
-2022-08-17 16:06:40,939 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 16:06:41,360 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[]'.
-2022-08-17 16:07:22,777 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 16:07:23,258 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413)]'.
-2022-08-17 18:24:34,923 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
-2022-08-17 18:24:35,401 [main] ERRORacademy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Fail while trying to update producer.
-java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:928) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.sun.rowset.JdbcRowSetImpl.execute(JdbcRowSetImpl.java:567) ~[java.sql.rowset:?]
-	at academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository.updateJdbcRowSet(Aula271ProducerRepository.java:46) ~[classes/:?]
-	at academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula271ProducerService.updateJdbcRowSet(Aula271ProducerService.java:16) ~[classes/:?]
-	at academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02.main(Aula271ConnectionFactoryTest02.java:17) ~[classes/:?]
-2022-08-17 18:24:35,407 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - ----------------------------------------------------
-2022-08-17 18:24:35,407 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 18:24:35,487 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413)]'.
-2022-08-17 18:25:02,453 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
-2022-08-17 18:25:02,968 [main] ERRORacademy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Fail while trying to update producer.
-java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:928) ~[mysql-connector-java-8.0.30.jar:8.0.30]
-	at com.sun.rowset.JdbcRowSetImpl.execute(JdbcRowSetImpl.java:567) ~[java.sql.rowset:?]
-	at academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository.updateJdbcRowSet(Aula271ProducerRepository.java:46) ~[classes/:?]
-	at academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula271ProducerService.updateJdbcRowSet(Aula271ProducerService.java:16) ~[classes/:?]
-	at academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02.main(Aula271ConnectionFactoryTest02.java:17) ~[classes/:?]
-2022-08-17 18:25:02,974 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - ----------------------------------------------------
-2022-08-17 18:25:02,974 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 18:25:03,046 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413), Aula271Producer(id=2, name=Aula256Producer), Aula271Producer(id=3, name=Gabriel)]'.
-2022-08-17 18:34:18,724 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
-2022-08-17 18:34:19,164 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - ----------------------------------------------------
-2022-08-17 18:34:19,164 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 18:34:19,210 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413), Aula271Producer(id=2, name=Aula256Producer), Aula271Producer(id=3, name=Gabriel)]'.
-2022-08-17 18:37:57,574 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
-2022-08-17 18:37:58,029 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - ----------------------------------------------------
-2022-08-17 18:37:58,030 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 18:37:58,081 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=Rondinelli413), Aula271Producer(id=2, name=Aula256Producer), Aula271Producer(id=3, name=Gabriel)]'.
-2022-08-17 18:39:47,946 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
-2022-08-17 18:39:48,515 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - ----------------------------------------------------
-2022-08-17 18:39:48,515 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 18:39:48,554 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=RONDINELLI413), Aula271Producer(id=2, name=Aula256Producer), Aula271Producer(id=3, name=Gabriel)]'.
-2022-08-17 18:49:59,831 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
-2022-08-17 18:50:00,375 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Command execute triggered.
-2022-08-17 18:50:00,375 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Cursor moved.
-2022-08-17 18:50:00,381 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Row inserted, updated or deleted.
-2022-08-17 18:50:00,386 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Command execute triggered.
-2022-08-17 18:50:00,388 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - ----------------------------------------------------
-2022-08-17 18:50:00,388 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Listing producer(s) by name.
-2022-08-17 18:50:00,427 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Command execute triggered.
-2022-08-17 18:50:00,427 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Cursor moved.
-2022-08-17 18:50:00,427 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Cursor moved.
-2022-08-17 18:50:00,427 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Cursor moved.
-2022-08-17 18:50:00,427 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener - Cursor moved.
-2022-08-17 18:50:00,430 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02 - Producers found: '[Aula271Producer(id=1, name=RONDINELLI413), Aula271Producer(id=2, name=Aula256Producer), Aula271Producer(id=3, name=Gabriel)]'.
+2022-08-19 17:04:16,690 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:04:17,393 [main] ERRORacademy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Fail while trying to update producer.
+javax.sql.rowset.spi.SyncProviderException: 1 conflicts while synchronizing
+	at com.sun.rowset.internal.CachedRowSetWriter.writeData(CachedRowSetWriter.java:407) ~[java.sql.rowset:?]
+	at com.sun.rowset.CachedRowSetImpl.acceptChanges(CachedRowSetImpl.java:894) ~[java.sql.rowset:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository.updateCachedRowSet(Aula271ProducerRepository.java:79) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula271ProducerService.updateCachedRowSet(Aula271ProducerService.java:20) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02.main(Aula271ConnectionFactoryTest02.java:18) ~[classes/:?]
+2022-08-19 17:26:37,126 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:27:43,174 [main] ERRORacademy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Fail while trying to update producer.
+javax.sql.rowset.spi.SyncProviderException: 1 conflicts while synchronizing
+	at com.sun.rowset.internal.CachedRowSetWriter.writeData(CachedRowSetWriter.java:407) ~[java.sql.rowset:?]
+	at com.sun.rowset.CachedRowSetImpl.acceptChanges(CachedRowSetImpl.java:894) ~[java.sql.rowset:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository.updateCachedRowSet(Aula271ProducerRepository.java:79) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula271ProducerService.updateCachedRowSet(Aula271ProducerService.java:20) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02.main(Aula271ConnectionFactoryTest02.java:18) ~[classes/:?]
+2022-08-19 17:27:55,026 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:31:15,844 [main] ERRORacademy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Fail while trying to update producer.
+javax.sql.rowset.spi.SyncProviderException: 1 conflicts while synchronizing
+	at com.sun.rowset.internal.CachedRowSetWriter.writeData(CachedRowSetWriter.java:407) ~[java.sql.rowset:?]
+	at com.sun.rowset.CachedRowSetImpl.acceptChanges(CachedRowSetImpl.java:894) ~[java.sql.rowset:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository.updateCachedRowSet(Aula271ProducerRepository.java:79) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula271ProducerService.updateCachedRowSet(Aula271ProducerService.java:20) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02.main(Aula271ConnectionFactoryTest02.java:18) ~[classes/:?]
+2022-08-19 17:31:21,485 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:34:39,129 [main] ERRORacademy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Fail while trying to update producer.
+javax.sql.rowset.spi.SyncProviderException: 1 conflicts while synchronizing
+	at com.sun.rowset.internal.CachedRowSetWriter.writeData(CachedRowSetWriter.java:407) ~[java.sql.rowset:?]
+	at com.sun.rowset.CachedRowSetImpl.acceptChanges(CachedRowSetImpl.java:894) ~[java.sql.rowset:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository.updateCachedRowSet(Aula271ProducerRepository.java:79) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula271ProducerService.updateCachedRowSet(Aula271ProducerService.java:20) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02.main(Aula271ConnectionFactoryTest02.java:18) ~[classes/:?]
+2022-08-19 17:34:42,443 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:35:58,007 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:35:58,575 [main] ERRORacademy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Fail while trying to update producer.
+javax.sql.rowset.spi.SyncProviderException: Can't call commit when autocommit=true
+	at com.sun.rowset.CachedRowSetImpl.acceptChanges(CachedRowSetImpl.java:926) ~[java.sql.rowset:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository.updateCachedRowSet(Aula271ProducerRepository.java:79) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.service.Aula271ProducerService.updateCachedRowSet(Aula271ProducerService.java:20) ~[classes/:?]
+	at academy.devdojo.maratonajava.javacore.ZZIjdbc.test.Aula271ConnectionFactoryTest02.main(Aula271ConnectionFactoryTest02.java:18) ~[classes/:?]
+2022-08-19 17:43:15,390 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:48:46,746 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:49:08,244 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).
+2022-08-19 17:49:36,174 [main] INFO academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.Aula271ProducerRepository - Updating producer(s).

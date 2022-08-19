@@ -1,17 +1,18 @@
 package academy.devdojo.maratonajava.javacore.ZZIjdbc.repository;
 
+import academy.devdojo.maratonajava.javacore.ZZIjdbc.conn.Aula255ConnectionFactory;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.conn.Aula271ConnectionFactory;
-import academy.devdojo.maratonajava.javacore.ZZIjdbc.dominio.Aula257Producer;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.dominio.Aula271Producer;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.listener.Aula272CustomRowSetListener;
 import lombok.extern.log4j.Log4j2;
 
+import javax.sql.rowset.CachedRowSet;
 import javax.sql.rowset.JdbcRowSet;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @Log4j2
 public class Aula271ProducerRepository {
@@ -59,10 +60,29 @@ public class Aula271ProducerRepository {
             jrs.setCommand(sql);
             jrs.setInt(1, producer.getId());
             jrs.execute();
-            if(!jrs.next()) return;
+            if (!jrs.next()) return;
             jrs.updateString("name", producer.getName());
             jrs.updateRow();
         } catch (SQLException e) {
+            log.error("Fail while trying to update producer.", e);
+        }
+    }
+
+    public static void updateCachedRowSet(Aula271Producer producer) {
+        log.info("Updating producer(s).");
+        String sql = "SELECT * FROM producer WHERE (`id` = ?);";
+        try (CachedRowSet crs = Aula271ConnectionFactory.getCachedRowSet();
+             Connection connection = Aula255ConnectionFactory.getConnection()) {
+            connection.setAutoCommit(false);
+            crs.setCommand(sql);
+            crs.setInt(1, producer.getId());
+            crs.execute(connection);
+            if (!crs.next()) return;
+            crs.updateString("name", producer.getName());
+            crs.updateRow();
+            TimeUnit.SECONDS.sleep(10);
+            crs.acceptChanges();
+        } catch (SQLException | InterruptedException e) {
             log.error("Fail while trying to update producer.", e);
         }
     }

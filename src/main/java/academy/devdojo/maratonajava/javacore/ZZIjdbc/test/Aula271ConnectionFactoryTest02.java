@@ -12,12 +12,13 @@ public class Aula271ConnectionFactoryTest02 {
         Aula271Producer producerToUpdate = Aula271Producer
                 .builder()
                 .id(1)
-                .name("RONDINELLI413")
+                .name("Rondinelli")
                 .build();
-        Aula271ProducerService.updateJdbcRowSet(producerToUpdate);
-        log.info("----------------------------------------------------");
-        List<Aula271Producer> producers = Aula271ProducerService.findByNameJdbcRowSet("");
-        log.info("Producers found: '{}'.", producers);
+//        Aula271ProducerService.updateJdbcRowSet(producerToUpdate);
+        Aula271ProducerService.updateCachedRowSet(producerToUpdate);
+//        log.info("----------------------------------------------------");
+//        List<Aula271Producer> producers = Aula271ProducerService.findByNameJdbcRowSet("");
+//        log.info("Producers found: '{}'.", producers);
 
     }
 }

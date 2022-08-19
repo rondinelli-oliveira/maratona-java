@@ -15,4 +15,8 @@ public class Aula271ProducerService {
     public static void updateJdbcRowSet(Aula271Producer producer) {
         Aula271ProducerRepository.updateJdbcRowSet(producer);
     }
+
+    public static void updateCachedRowSet(Aula271Producer producer) {
+        Aula271ProducerRepository.updateCachedRowSet(producer);
+    }
 }
