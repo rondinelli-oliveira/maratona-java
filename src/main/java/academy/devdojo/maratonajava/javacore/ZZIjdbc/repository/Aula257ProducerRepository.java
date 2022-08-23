@@ -21,6 +21,37 @@ public class Aula257ProducerRepository {
         }
     }
 
+    public static void saveTransaction(List<Aula257Producer> producers) {
+        try (Connection conn = Aula255ConnectionFactory.getConnection()) {
+            conn.setAutoCommit(false);
+            preparedStatementSaveTrasaction(conn, producers);
+            conn.commit();
+            conn.setAutoCommit(true);
+        } catch (SQLException e) {
+            log.error("Error while trying to save producers '{}' in database.", producers, e);
+        }
+    }
+
+    private static void preparedStatementSaveTrasaction(Connection conn, List<Aula257Producer> producers) throws SQLException {
+        String sql = "INSERT INTO `anime_store`.`producer` (`name`) VALUES ( ? );";
+        boolean shouldRollback = false;
+        for (Aula257Producer p : producers) {
+            try (PreparedStatement ps = conn.prepareStatement(sql)) {
+                log.info("Saving producer: '{}'", p.getName());
+                ps.setString(1, p.getName());
+//                if (p.getName().equals("Gabriel")) throw new SQLException("Can`t save Gabriel");
+                ps.execute();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                shouldRollback = true;
+            }
+        }
+        if (shouldRollback) {
+            log.warn("Transaction is going to be rolled back");
+            conn.rollback();
+        }
+    }
+
     public static void delete(int id) {
         String sql = "DELETE FROM `anime_store`.`producer` WHERE (`id` = '%d');".formatted(id);
         try (Connection conn = Aula255ConnectionFactory.getConnection();

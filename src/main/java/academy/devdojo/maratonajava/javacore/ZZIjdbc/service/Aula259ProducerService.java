@@ -11,6 +11,10 @@ public class Aula259ProducerService {
         Aula257ProducerRepository.save(producer);
     }
 
+    public static void saveTransaction(List<Aula257Producer> producers) {
+        Aula257ProducerRepository.saveTransaction(producers);
+    }
+
     public static void delete(Integer id) {
         requireValidId(id);
         Aula257ProducerRepository.delete(id);
